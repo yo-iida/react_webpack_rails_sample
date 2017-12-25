@@ -44,7 +44,8 @@
     "start": "webpack -w --config webpack/dev.config.js",
     "start-hot-dev": "webpack-dev-server --hot --inline --config webpack/hot-dev.config.js",
     "test": "karma start",
-    "postinstall": "webpack -p --config webpack/production.config.js"
+    "postinstall": "webpack -p --config webpack/production.config.js",
+    "heroku-prebuild": "webpack -p --config webpack/production.config.js"
   },
   "license": "",
   "engines": {
